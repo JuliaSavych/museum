@@ -1,0 +1,32 @@
+.contacts-wrap {
+	&>* {
+		margin-bottom: 30px;
+	}
+	
+}
+
+.phones {
+	display: flex;
+	flex-direction: column;
+	a {
+		color: $grey;
+		&:hover {
+			color: $black;
+		}
+	}
+}
+
+.address {
+	span {
+		color: $grey;
+	}
+}
+
+.email {
+	a {
+		color: $grey;
+		&:hover {
+			color: $black;
+		}
+	}
+}

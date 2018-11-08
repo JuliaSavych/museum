@@ -1,0 +1,44 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html{
+  height: 100%;
+  
+}
+
+body{
+  min-height: 100%;
+  position: relative;
+  font-family: 'Roboto', sans-serif;
+}
+
+a {
+	text-decoration: none;
+}
+
+h1.subheading {
+  margin-bottom: 20px;
+}
+
+.d-flex{
+	display: flex;
+}
+
+.d-flex.space-between {
+	justify-content: space-between;
+}
+
+.d-flex.align-items-center {
+  align-items: center;
+}
+
+.text-center{
+  text-align: center;
+}
+
+.offset {
+  padding: 20px 0;
+}

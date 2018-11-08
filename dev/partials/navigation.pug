@@ -1,0 +1,33 @@
+-
+	var menu = [
+		{
+			title : 'Головна',
+			href : 'index.html'
+		},
+		{
+			title : 'service',
+			href : '#'
+		},
+		{
+			title : 'work',
+			href : '#'
+		},
+		{
+			title : 'blog',
+			href : '#'
+		},
+		{
+			title : 'Контакти',
+			href : '#'
+		}
+	];
+
+nav.navigation 
+	ul#menu
+		each item in menu
+			li: a(href=item.href)=item.title
+	.mobile-nav-btn
+		i
+			.fas.fa-bars
+		//- i 
+		//- 	.fas.fa-times

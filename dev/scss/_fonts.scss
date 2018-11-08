@@ -1,0 +1,32 @@
+.fa-bars {
+	color: $black;
+	cursor: pointer;
+	font-size: 20px;
+	transition: .3s ease all;
+}
+
+.fa-times {
+	display: none;
+	transition: .3s ease all;
+	&.active {
+		display: block;
+		font-size: 20px;
+		transition: .3s ease all;
+
+	}
+}
+
+.fa-map-marker-alt {
+	font-size: 20px;
+	margin-right: 10px;
+}
+
+.fa-envelope {
+	font-size: 20px;
+	margin-right: 10px;
+}
+
+.fa-phone {
+	font-size: 20px;
+	margin-right: 10px;
+}

@@ -1,0 +1,31 @@
+.contacts.offset
+	.wrapper
+		h1.subheading.text-center
+			|Контакти
+		.d-flex.space-between.align-items-center
+			.col-1-1.col-1-2.contacts-wrap
+				.address.d-flex.align-items-center
+					i 
+						.fas.fa-map-marker-alt
+					span
+						|вул. 16 липня, 247, смт Делятин 
+						br
+						|Івано-Франківська обл., Надвірнянський р-н
+				.email.d-flex.align-items-center
+					i 
+						.fas.fa-envelope
+					a(href="email:") someemail@gmail.com
+				.d-flex.align-items-center
+					i
+						.fas.fa-phone
+					.phones
+						a(href="tel:+380672500365") +38 (067) 250-03-65
+						a(href="tel:+380969597185") +38 (096) 959-71-85
+			.col-1-1.col-1-2
+				.map#map
+					script.
+						function initMap() {
+							var place = {lat: 48.5223683, lng: 24.62466310000002};
+							var map = new google.maps.Map(document.getElementById('map'), {zoom: 13, center: place});
+							var marker = new google.maps.Marker({position: place, map: map});
+						}

@@ -1,0 +1,65 @@
+.navigation {
+	&>* {
+		display: inline-block;
+	}
+}
+
+#menu {
+	display: flex;
+	flex-direction: column;
+	position: absolute;
+	top: 65px;
+	z-index: 1;
+	right: -100%;
+	width: 260px;
+	li {
+		display: inline-block;
+		width: 100%;
+		padding: 15px;
+		margin-right: 5px;
+		a {
+			text-align: right;
+			display: block;
+			text-transform: uppercase;
+			padding: 10px 0;
+			font-size: 20px;
+		}
+	}
+	&.active {
+		position: fixed;
+		top: 65px;
+		right: 0;
+		z-index: 10;
+		transition: .3s ease all;
+	}
+	@include breakpoint(md) {
+		display: flex;
+		justify-content: space-between;
+		flex-direction: row;
+		position: relative;
+		top: 0;
+		right: 0;
+		width: 100%;
+		li {
+			display: flex;
+			flex-wrap: nowrap;
+			display: inline-block;
+			margin-right: 25px;
+			padding: 0;
+			a{
+				text-transform: uppercase;
+				color: $black;
+				position: relative;
+				width: 100%;
+				font-size: 14px;
+				transition: .3s ease color;
+			}
+		}
+	}
+}
+
+.mobile-nav-btn {
+	@include breakpoint(md) {
+		display: none;
+	}
+}

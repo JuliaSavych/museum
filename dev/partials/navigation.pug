@@ -5,15 +5,15 @@
 			href : 'index.html'
 		},
 		{
-			title : 'service',
+			title : 'Опис',
 			href : '#'
 		},
 		{
-			title : 'work',
+			title : 'Галерея',
 			href : '#'
 		},
 		{
-			title : 'blog',
+			title : 'Розклад',
 			href : '#'
 		},
 		{
@@ -23,11 +23,9 @@
 	];
 
 nav.navigation 
-	ul#menu
+	ul.menu
 		each item in menu
 			li: a(href=item.href)=item.title
-	.mobile-nav-btn
+	#mobile-nav-btn
 		i
 			.fas.fa-bars
-		//- i 
-		//- 	.fas.fa-times

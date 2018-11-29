@@ -1,10 +1,12 @@
 .navigation {
+	display: flex;
+    align-items: center;
 	&>* {
 		display: inline-block;
 	}
 }
 
-#menu {
+.menu {
 	display: flex;
 	flex-direction: column;
 	position: absolute;
@@ -44,21 +46,26 @@
 			display: flex;
 			flex-wrap: nowrap;
 			display: inline-block;
-			margin-right: 25px;
+			margin-right: 20px;
 			padding: 0;
 			a{
 				text-transform: uppercase;
-				color: $black;
+				color: $white;
 				position: relative;
 				width: 100%;
 				font-size: 14px;
-				transition: .3s ease color;
+				transition: .3s ease all;
+				padding: 5px;
+				&:hover {
+					background-color: #529C3A;
+					border-radius: 2px;
+				}
 			}
 		}
 	}
 }
 
-.mobile-nav-btn {
+#mobile-nav-btn {
 	@include breakpoint(md) {
 		display: none;
 	}
